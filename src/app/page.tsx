@@ -5,7 +5,7 @@ import Master from "./components/Master";
 import React, { useRef } from "react";
 import Service from "./components/Service Page";
 import ClientPage from "./components/Client Page";
-import { Pointer } from "@/components/magicui/pointer";
+import Footer from "./components/Footer Page";
 
 
 export default function Home() {
@@ -13,12 +13,14 @@ export default function Home() {
 
   return (
     <div className="bg-black">
-      <Pointer />
+      {/* <Pointer /> */}
       <Header />
       <Master aboutRef={aboutRef} />
       <AboutPage ref={aboutRef} />
       <Service/>
+      {/* <ProductShowcase/> */}
       <ClientPage/>
+      <Footer/>
     </div>
   );
 }

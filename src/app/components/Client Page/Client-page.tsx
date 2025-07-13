@@ -1,70 +1,25 @@
 import React from "react";
-import Marquee from "react-fast-marquee";
-import FBLogo from "../../images/Company Logos/1000225407.jpg";
-import MUttonStall from "../../images/Company Logos/20250623_212025.jpg";
-import logo3 from "../../images/Company Logos/20250623_212003.jpg";
-import logo4 from "../../images/Company Logos/1000160559.png";
-
-import Image from "next/image";
+import TestimonialSlider from "@/components/ui/test-monial-slider";
 
 function ClientPage() {
   return (
     <div id="about" className="p-10">
-      <h2 className="text-white">CLIENTS</h2>
+      {/* <h2 className="text-white">CLIENTS</h2>
       <div className="mt-5">
         <span className="text-white text-4xl font-bold mission-text">
           Our Clients
         </span>
-      </div>
-      <div className="grid grid-cols-2">
-        <div>
-          <Marquee speed={20} className="gap-4">
-            <Image
-              src={FBLogo}
-              alt="Client Logo"
-              width={100}
-              height={100}
-              className="ml-3"
-            />
-            <Image
-              src={MUttonStall}
-              alt="Client Logo"
-              width={100}
-              height={100}
-              className="ml-3"
-            />
-            <Image
-              src={logo3}
-              alt="Client Logo"
-              width={100}
-              height={100}
-              className="ml-3"
-            />
-            <Image
-              src={logo4}
-              alt="Client Logo"
-              width={200}
-              height={100}
-              className="ml-3 mt-3"
-            />
-          </Marquee>
+      </div> */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-800 to-white bg-clip-text text-transparent mb-6">
+            What Our Clients Say
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Discover why businesses trust us with their success stories
+          </p>
         </div>
-        <div className="text-white text-xl font-medium">
-          <div className=" bg-blue-900 w-full h-40 justify-center p-10 rounded-4xl fade-in-25">
-            <span className="font-serif text-xs">
-              “They’ve been an essential part of our brand promotion. The video
-              reels they created for our projects were sharp, professional, and
-              perfectly captured our on-site work. Highly recommend for anyone
-              in construction!”
-            </span>
-            <div className="font-serif text-xs flex-row">
-              <Image src={logo3} className=" w-8 h-8 rounded-2xl"  alt="new"/>
-              <div className= 'grid-cols-2'>
-                <span>Rayan Construction</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TestimonialSlider />
       </div>
     </div>
   );

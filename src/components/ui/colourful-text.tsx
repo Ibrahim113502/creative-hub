@@ -4,16 +4,16 @@ import { motion } from "motion/react";
 
 export function ColourfulText({ text }: { text: string }) {
   const colors = [
-    "rgb(131, 179, 32)",
-    "rgb(47, 195, 106)",
-    "rgb(42, 169, 210)",
-    "rgb(4, 112, 202)",
-    "rgb(107, 10, 255)",
-    "rgb(183, 0, 218)",
-    "rgb(218, 0, 171)",
-    "rgb(230, 64, 92)",
-    "rgb(232, 98, 63)",
-    "rgb(249, 129, 47)",
+    "rgb(179, 215, 102)",   // Light lime green
+    "rgb(102, 225, 156)",   // Light mint green
+    "rgb(102, 204, 238)",   // Light sky blue
+    "rgb(102, 162, 235)",   // Light blue
+    "rgb(157, 102, 255)",   // Light purple
+    "rgb(215, 102, 245)",   // Light magenta
+    "rgb(245, 102, 204)",   // Light pink
+    "rgb(255, 140, 166)",   // Light coral
+    "rgb(255, 162, 133)",   // Light orange
+    "rgb(255, 184, 122)",   // Light peach
   ];
 
   const [currentColors, setCurrentColors] = React.useState(colors);
