@@ -278,7 +278,7 @@ const ProductCard = ({ product, index }:any) => {
 
 function ProductShowcase() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState('all');
+  // const [activeTab, setActiveTab] = useState('all');
   
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 100);

@@ -1,8 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
-import React, { useRef } from "react";
+import React from "react";
 import { motion, Variants } from "framer-motion";
 
 function Master({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement> }) {

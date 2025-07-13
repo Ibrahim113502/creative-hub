@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Globe, Smartphone, Bot, Megaphone, Palette, Video, Code, Zap } from "lucide-react";
+import { Globe, Smartphone, Bot, Megaphone, Palette, Video, Code } from "lucide-react";
 
 const services = [
   {
@@ -68,7 +68,7 @@ const FloatingParticle = ({ delay }:any) => (
   />
 );
 
-const ServiceCard = ({ service, index }:any) => {
+const ServiceCard = ({ service }:any) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { 
   Mail, 
-  Phone, 
   MapPin, 
-  Globe, 
   Facebook, 
   Twitter, 
   Instagram, 
@@ -11,9 +9,7 @@ import {
   Github,
   ArrowRight,
   Heart,
-  Star,
   Send,
-  ChevronUp
 } from "lucide-react";
 
 const socialLinks = [
@@ -85,9 +81,9 @@ const Footer = () => {
     }, 2000);
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
@@ -112,7 +108,7 @@ const Footer = () => {
                 CREATIVE<span className="text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text"> HUB</span>
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                We're a passionate team of developers, designers, and innovators dedicated to bringing your digital dreams to life with cutting-edge technology and creative excellence.
+                We&apos;re a passionate team of developers, designers, and innovators dedicated to bringing your digital dreams to life with cutting-edge technology and creative excellence.
               </p>
             </div>
             
@@ -128,7 +124,7 @@ const Footer = () => {
               </div> */}
               <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300">
                 <MapPin size={16} />
-                <span className="text-sm">Rayan Complex, 1'st Floor Rahuman Street, Aloor<br />Kanyakumari District, TamilNadu</span>
+                <span className="text-sm">Rayan Complex, 1&apos;st Floor Rahuman Street, Aloor<br />Kanyakumari District, TamilNadu</span>
               </div>
             </div>
           </div>

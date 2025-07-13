@@ -36,15 +36,11 @@ const contactMethods = [
   },
 ];
 
-const ContactMethodCard = ({ method, index }:any) => {
-  const [isHovered, setIsHovered] = useState(false);
-  
+const ContactMethodCard = ( method:any ) => {  
   return (
     <div
       className="relative group cursor-pointer transform transition-all duration-700 hover:-translate-y-2 hover:scale-105"
       style={{ animationDelay: method.delay }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       {/* Animated background glow */}
       <div className={`absolute -inset-1 bg-gradient-to-r ${method.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-70 transition-all duration-1000`} />
@@ -148,11 +144,11 @@ function ContactUs() {
             </span>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Let's Build Something
+            Let&apos;s Build Something
             <span className="text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text"> Amazing</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Ready to transform your ideas into reality? We're here to help you every step of the way.
+            Ready to transform your ideas into reality? We&apos;re here to help you every step of the way.
           </p>
           
           {/* Decorative line */}
@@ -378,7 +374,7 @@ function ContactUs() {
               Ready to Start Your Project?
             </h3>
             <p className="text-gray-400 mb-8">
-              Don't wait! Let's discuss your ideas and turn them into reality. 
+              Don&apos;t wait! Let&apos;s discuss your ideas and turn them into reality. 
               Get a free consultation and quote today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
