@@ -148,7 +148,7 @@ const AboutPage = forwardRef<HTMLDivElement>((_, ref) => {
           variants={subTitleVariants}
         >
           <motion.span
-            className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mission-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+            className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mission-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text"
             variants={floatingVariants}
             animate="floating"
           >
